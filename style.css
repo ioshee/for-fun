@@ -1,0 +1,52 @@
+.game {
+    width: 60em;
+    height: 10em;
+    border-bottom: 0.1em solid #000;
+    margin: auto;
+}
+#bird {
+    width: 3rem;
+    height: 3rem;
+    background-image: url(img/pngegg.png);
+    background-size: 3em 3em;
+    position: relative;
+    top: 6em;
+}
+#cloud {
+    width: 5em;
+    height: 5em;
+    background-image: url(img/—Pngtree—white\ cloud\ pixel\ icon\ free_4490117.png);
+    background-size: 5em 5em;
+    position: relative;
+    top: 3.7em;
+    left: 55em;
+    animation: cloudMov 1.5s infinite linear;
+}
+@keyframes cloudMov {
+0%  {
+    left: 55em;
+}
+100% {
+    left: -5em;
+}
+}
+.jump {
+    animation: jump 0.5s linear;
+}
+@keyframes jump {
+    0% {
+        top: 6em;
+    }
+    30% {
+        top: 4em;
+    }
+    50% {
+        top: 2em;
+    }
+    80% {
+        top: 4em;
+    }
+    100% {
+        top: 6em;
+    }
+}
